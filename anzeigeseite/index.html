@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>LiveScore</title>
+    <link rel="stylesheet" href="http://xttv.oettv.info/css/ed_style.css" media="screen" type="text/css">
+  </head>
+  <body>
+    <div id="header">
+    	<table class="header">
+    		<tbody><tr valign="middle">
+    			<td style="border-style:none; margin:0; padding:0px;" width="25%" align="left"><a class="img" href="http://www.noettv.org"><img src="http://xttv.oettv.info/pic/noettv_logo.jpg" border="0" style="margin:5px; margin-left:0px" height="71" alt=""></a></td>
+    			<td style="border-style:none" width="50%" align="center">
+    				<span class="headerTitle">XTTV Ergebnisdienst</span><br>
+    				<span class="headerSubTitle"><noscript>&lt;br /&gt;&lt;b&gt;Für eine vollständige Funktionsweise und eine optimale Darstellung muss Javascript aktiviert werden.&lt;/b&gt;</noscript></span>
+    			</td>
+    			<td style="border-style:none; margin:0; padding:0px;" width="25%" align="right"><a class="img" href="http://www.donic.de" target="_blank"> <img src="http://xttv.oettv.info/pic/noettv_sponsor_logo.gif" border="0" style="margin:5px; margin-right:0;" height="71" alt="DONIC"></a></td>
+    		</tr>
+    	 </tbody>
+      </table>
+  	</div>
+    <div id="subheader">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr class="subheader">
+            <td style="border-style:none; padding:5px;" align="left">
+              <div class="subheader-left">
+                <a href="/ed/index.php?oid=188"><img src="http://xttv.oettv.info/pic/home.gif" align="middle" border="0" alt=""></a>
+              </div>
+              <div class="subheader-left">
+                <select name="oid" onchange="this.form.submit()">
+                  <option value="189">BTTV</option>
+                  <option value="190">KTTV</option>
+                  <option value="188" selected="selected">NÖTTV</option>
+                  <option value="191">OÖTTV</option>
+                  <option value="193">STTTV</option>
+                  <option value="192">STTV</option>
+                  <option value="194">TTTV</option>
+                  <option value="195">VTTV</option>
+                  <option value="196">WTTV</option>
+                  <option value="133">ÖTTV</option>
+                  <option value="268">Superleague</option>
+                  <option value="862">Intercup</option>
+                </select>
+                <noscript>&lt;br /&gt;</noscript>
+                &nbsp;
+                <select name="sjid" onchange="this.form.submit()">
+                  <option value="17">2017/2018&nbsp;</option>
+                  <option value="16" selected="selected">2016/2017&nbsp;</option>
+                  <option value="15">2015/2016&nbsp;</option>
+                  <option value="14">2014/2015&nbsp;</option>
+                  <option value="13">2013/2014&nbsp;</option>
+                  <option value="12">2012/2013&nbsp;</option>
+                  <option value="11">2011/2012&nbsp;</option>
+                  <option value="10">2010/2011&nbsp;</option>
+                  <option value="1">2009/2010&nbsp;</option>
+                  <option value="2">2008/2009&nbsp;</option>
+                </select>
+              </div>
+              <div class="subheader-left">
+                <select name="do" onchange="this.form.submit()">
+                  <option value="">Ergebnisse</option>
+                  <option value="vereinstermine">Vereinstermine&nbsp;</option>
+                  <option value="spielersuche">Spielersuche</option>
+                  <option value="spielereinsatz">Spielereinsätze</option>
+                  <option value="benachrichtigung">E-Mail-Nachricht</option>
+                </select>
+                <input name="oid" type="hidden" value="188">
+                <input name="sjid" type="hidden" value="16">
+                <input name="vid" type="hidden" value="1064">
+                <input name="bwid" type="hidden" value="">
+              </div>
+            </td>
+            <td style="border-style:none; padding:5px;" align="right">
+              <div class="subheader-right">
+                <a href="../public/Anleitung_XTTV-Ergebnisdienst.pdf" target="_blank"><img src="http://xttv.oettv.info/pic/hilfe.gif" align="middle" border="0" alt=""></a>
+              </div>
+              <div class="subheader-right">
+                <a class="img" href="/ed/index.php?lang=de&amp;oid=188&amp;highVid=1064"><img src="http://xttv.oettv.info/pic/sprache_de.gif" align="middle" border="0" alt=""></a>
+                <a class="img" href="/ed/index.php?lang=en&amp;oid=188&amp;highVid=1064"><img src="http://xttv.oettv.info/pic/sprache_en.gif" align="middle" border="0" alt=""></a>
+              </div>
+              <div class="subheader-right">
+                <input type="button" style="width:120px;" value="Anmeldung" name="dummy" onclick="">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="LiveScore">
+    </div>
+    <div id="siteInfo">
+      XTTV Ergebnisdienst (Version 8.0 - 12.12.2016, <a href="changelog.txt" target="_blank">changelog</a>)	<span class="noPrint">| Open Source unter <a href="http://www.gnu.de/documents/gpl-3.0.de.html" target="_blank">GPL</a> | <a href="http://xttv.oettv.info" target="_blank">XTTV</a> | <a href="mailto:muba@noettv.info">NÖTTV-Kontakt</a></span>
+    </div>
+  </body>
+</html>
