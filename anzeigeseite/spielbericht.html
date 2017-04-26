@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LiveScore</title>
+    <link rel="stylesheet" href="http://xttv.oettv.info/css/ed_style.css" media="screen" type="text/css">
+  </head>
+  <body>
+    <div id="header">
+    	<table class="header">
+    		<tbody><tr valign="middle">
+    			<td style="border-style:none; margin:0; padding:0px;" width="25%" align="left"><a class="img" href="http://www.oettv.org"><img src="http://xttv.oettv.info/pic/oettv_logo.jpg" border="0" style="margin:5px; margin-left:0px" height="71" alt=""></a></td>
+    			<td style="border-style:none" width="50%" align="center">
+    				<span class="headerTitle">XTTV Ergebnisdienst</span><br>
+    				<span class="headerSubTitle"><noscript>&lt;br /&gt;&lt;b&gt;F&uuml;r eine vollst&auml;ndige Funktionsweise und eine optimale Darstellung muss Javascript aktiviert werden.&lt;/b&gt;</noscript></span>
+    			</td>
+    			<td style="border-style:none; margin:0; padding:0px;" width="25%" align="right"><a class="img" href="http://www.ttbundesliga.at" target="_blank"> <img src="http://xttv.oettv.info/pic/oettv_sponsor_logo.png" border="0" style="margin:5px; margin-right:0;" height="71" alt="DONIC"></a></td>
+    		</tr>
+    	 </tbody>
+      </table>
+  	</div>
+    <div id="subheader">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr class="subheader">
+            <td style="border-style:none; padding:5px;" align="left">
+              <div class="subheader-left">
+                <a href=""><img src="http://xttv.oettv.info/pic/home.gif" align="middle" border="0" alt=""></a>
+              </div>
+              <div class="subheader-left">
+                <select name="oid" onchange="this.form.submit()">
+                  <option value="189">BTTV</option>
+                  <option value="190">KTTV</option>
+                  <option value="188">N&Ouml;TTV</option>
+                  <option value="191">O&Ouml;TTV</option>
+                  <option value="193">STTTV</option>
+                  <option value="192">STTV</option>
+                  <option value="194">TTTV</option>
+                  <option value="195">VTTV</option>
+                  <option value="196">WTTV</option>
+                  <option value="133" selected="selected">&Ouml;TTV</option>
+                  <option value="268">Superleague</option>
+                  <option value="862">Intercup</option>
+                </select>
+                <noscript>&lt;br /&gt;</noscript>
+                &nbsp;
+                <select name="sjid" onchange="this.form.submit()">
+                  <option value="17">2017/2018&nbsp;</option>
+                  <option value="16" selected="selected">2016/2017&nbsp;</option>
+                  <option value="15">2015/2016&nbsp;</option>
+                  <option value="14">2014/2015&nbsp;</option>
+                  <option value="13">2013/2014&nbsp;</option>
+                  <option value="12">2012/2013&nbsp;</option>
+                  <option value="11">2011/2012&nbsp;</option>
+                  <option value="10">2010/2011&nbsp;</option>
+                  <option value="1">2009/2010&nbsp;</option>
+                  <option value="2">2008/2009&nbsp;</option>
+                </select>
+              </div>
+              <div class="subheader-left">
+                <select name="do" onchange="this.form.submit()">
+                  <option value="">Ergebnisse</option>
+                  <option value="vereinstermine">Vereinstermine&nbsp;</option>
+                  <option value="spielersuche">Spielersuche</option>
+                  <option value="spielereinsatz">Spielereins&auml;tze</option>
+                  <option value="benachrichtigung">E-Mail-Nachricht</option>
+                </select>
+                <input name="oid" type="hidden" value="188">
+                <input name="sjid" type="hidden" value="16">
+                <input name="vid" type="hidden" value="1064">
+                <input name="bwid" type="hidden" value="">
+              </div>
+              <div class="subheader-left">
+                <input name="meid" type="hidden" value="197800">
+                <select name="highVid" onchange="this.form.submit()">
+                  <option value="">[hervorheben]</option>
+                  <option value="9">BAAC&nbsp;</option>
+                  <option value="144">INNS&nbsp;</option>
+                  <option value="145">KAPF&nbsp;</option>
+                  <option value="146">KENN&nbsp;</option>
+                  <option value="155">MAUT&nbsp;</option>
+                  <option value="68">NEUD&nbsp;</option>
+                  <option value="156">OBWT&nbsp;</option>
+                  <option value="1064" selected="selected">SGSTO&nbsp;</option>
+                  <option value="1065">SPLI&nbsp;</option>
+                  <option value="169">WELS&nbsp;</option>
+                </select>
+              </div>
+            </td>
+            <td style="border-style:none; padding:5px;" align="right">
+              <div class="subheader-right">
+                <a href="http://xttv.oettv.info/public/Anleitung_XTTV-Ergebnisdienst.pdf" target="_blank"><img src="http://xttv.oettv.info/pic/hilfe.gif" align="middle" border="0" alt=""></a>
+              </div>
+              <div class="subheader-right">
+                <a class="img" href="/ed/index.php?lang=de&amp;oid=188&amp;highVid=1064"><img src="http://xttv.oettv.info/pic/sprache_de.gif" align="middle" border="0" alt=""></a>
+                <a class="img" href="/ed/index.php?lang=en&amp;oid=188&amp;highVid=1064"><img src="http://xttv.oettv.info/pic/sprache_en.gif" align="middle" border="0" alt=""></a>
+              </div>
+              <div class="subheader-right">
+                <input type="button" style="width:120px;" value="Anmeldung" name="dummy" onclick="">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="uebersicht">
+      <table width="100%" cellspacing="0">
+        <tr>
+          <td class="oben">Gruppe</td>
+          <td>
+            <a href="/ed/index.php?uegID=680&amp;highVid=1064">Er&ouml;ffnungsturnier</a>&nbsp;
+            <a href="/ed/index.php?uegID=681&amp;highVid=1064" class="selected">Grunddurchgang</a>&nbsp;
+            <a href="/ed/index.php?uegID=682&amp;highVid=1064">Finalturnier</a>&nbsp;
+            <a href="/ed/index.php?uegID=731&amp;highVid=1064">&Ouml;M&nbsp;U21&nbsp;m&auml;nnlich</a>&nbsp;
+            <a href="/ed/index.php?uegID=732&amp;highVid=1064">&Ouml;M&nbsp;U21&nbsp;weiblich</a>&nbsp;
+            <a href="/ed/index.php?uegID=733&amp;highVid=1064">&Ouml;M&nbsp;U15&nbsp;m&auml;nnlich</a>&nbsp;
+            <a href="/ed/index.php?uegID=734&amp;highVid=1064">&Ouml;M&nbsp;U15&nbsp;weiblich</a>&nbsp;
+          </td>
+        </tr>
+        <tr>
+          <td class="oben">Klasse</td>
+          <td>
+            <a href="/ed/index.php?lid=3573&highVid=1064">1.&nbsp;Damen-Bundesliga</a>&nbsp;
+            <a href="/ed/index.php?lid=3570&meid=197800&highVid=1064" class="selected">1.&nbsp;Herren-Bundesliga</a>&nbsp;
+            <a href="/ed/index.php?lid=3574&highVid=1064">2.&nbsp;Damen-Bundesliga</a>&nbsp;
+            <a href="/ed/index.php?lid=3571&highVid=1064">2.&nbsp;Herren-Bundesliga&nbsp;A</a>&nbsp;
+            <a href="/ed/index.php?lid=3572&highVid=1064">2.&nbsp;Herren-Bundesliga&nbsp;B</a>&nbsp;
+            <a href="/ed/index.php?lid=3684&highVid=1064">Damen-Regionalliga&nbsp;A</a>&nbsp;
+            <a href="/ed/index.php?lid=3685&highVid=1064">Damen-Regionalliga&nbsp;B</a>&nbsp;
+          </td>
+        </tr>
+        <tr>
+          <td class="oben">Runde</td>
+          <td>
+            <table>
+              <tr>
+                <td class="rundennummern">Durchgang 1:</td>
+                <td class="rundennummern">
+                  <table>
+                    <tr>
+                      <td title="05.09.2016" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=1&amp;sprnr=1&amp;highVid=1064">1</a></td>
+                      <td title="19.09.2016" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=1&amp;sprnr=2&amp;highVid=1064">2</a></td>
+                      <td title="26.09.2016" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=1&amp;sprnr=3&amp;highVid=1064">3</a></td>
+                      <td title="03.10.2016" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=1&amp;sprnr=4&amp;highVid=1064">4</a></td>
+                      <td title="10.10.2016" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=1&amp;sprnr=5&amp;highVid=1064">5</a></td>
+                      <td title="24.10.2016" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=1&amp;sprnr=6&amp;highVid=1064">6</a></td>
+                      <td title="07.11.2016" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=1&amp;sprnr=7&amp;highVid=1064">7</a></td>
+                      <td title="21.11.2016" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=1&amp;sprnr=8&amp;highVid=1064">8</a></td>
+                      <td title="28.11.2016" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=1&amp;sprnr=9&amp;highVid=1064">9</a></td>
+                    </tr>
+                  </table>
+                </td>
+                <td class="rundennummern">Durchgang 2:</td>
+                <td class="rundennummern">
+                  <table>
+                    <tr>
+                      <td title="09.01.2017" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=2&amp;sprnr=1&amp;highVid=1064">1</a></td>
+                      <td title="13.02.2017" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=2&amp;sprnr=2&amp;highVid=1064">2</a></td>
+                      <td title="20.02.2017" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=2&amp;sprnr=3&amp;highVid=1064">3</a></td>
+                      <td title="27.02.2017" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=2&amp;sprnr=4&amp;highVid=1064">4</a></td>
+                      <td title="13.03.2017" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=2&amp;sprnr=5&amp;highVid=1064">5</a></td>
+                      <td title="20.03.2017" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=2&amp;sprnr=6&amp;highVid=1064" class="selected">6</a></td>
+                      <td title="03.04.2017" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=2&amp;sprnr=7&amp;highVid=1064">7</a></td>
+                      <td title="10.04.2017" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=2&amp;sprnr=8&amp;highVid=1064">8</a></td>
+                      <td title="01.05.2017" class="rundennummern"><a href="/ed/index.php?do=spiele&lid=3570&amp;sprdg=2&amp;sprnr=9&amp;highVid=1064">9</a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="oben">Mannschaft</td>
+          <td>
+            <a href="/ed/index.php?tid=23550&amp;highVid=1064&do=spiele" title="BADENER AC-TT"><span>BAAC1</span></a>&nbsp;
+            <a href="/ed/index.php?tid=23542&amp;highVid=1064&do=spiele" title="Turnerschaft Innsbruck"><span>INNS1</span></a>&nbsp;
+            <a href="/ed/index.php?tid=23411&amp;highVid=1064&do=spiele" title="KSV HiWay Grill Kapfenberg"><span>KAPF1</span></a>&nbsp;
+            <a href="/ed/index.php?tid=23415&amp;highVid=1064&do=spiele" title="UTTC Raiffeisen Kennelbach"><span>KENN1</span></a>&nbsp;
+            <a href="/ed/index.php?tid=23561&amp;highVid=1064&do=spiele" title="ASK&Ouml; Glas Wiesbauer Mauthausen"><span>MAUT1</span></a>&nbsp;
+            <a href="/ed/index.php?tid=23500&amp;highVid=1064&do=spiele" title="TTV Wr. Neudorf 1947"><span>NEUD1</span></a>&nbsp;
+            <a href="/ed/index.php?tid=23555&amp;highVid=1064&do=spiele" title="UTTC Oberwart"><span>OBWT1</span></a>&nbsp;
+            <a href="/ed/index.php?tid=23364&amp;highVid=1064&do=spiele" title="SG TTSC Stockerau + UTTC Stockerau"><span class="highlight">SGSTO1</span></a>&nbsp;
+            <a href="/ed/index.php?tid=23156&amp;highVid=1064&do=spiele" title="SP Linz AG-Froschberg + DSG/Union Waldegg Linz"><span>SPLI1</span></a>&nbsp;
+            <a href="/ed/index.php?tid=23558&amp;highVid=1064&do=spiele" title="SPG WALTER Wels"><span>WELS1</span></a>&nbsp;
+          </td>
+        </tr>
+        <tr><td class="oben">Ansicht</td>
+          <td>
+            <a class="selected" href="/ed/index.php?lid=3570&amp;highVid=1064">Tabelle&Rangliste</a>
+            <a href="/ed/index.php?lid=3570&amp;highVid=1064&amp;amp;do=doppel">Doppelrangliste</a>
+            <a href="/ed/index.php?lid=3570&amp;highVid=1064&amp;do=kreuz">Kreuztabelle</a>
+            <a href="/ed/index.php?highVid=1064&amp;do=spiele&amp;zeit=currentDate&amp;lid=3570">Spiele</a>
+            Mannschaftsdaten <a href="/ed/index.php?lid=3570&amp;highVid=1064&amp;do=msf">Mannschaftsf&uuml;hrer</a>
+            PDF-Auswahl
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="spb-titel">2016/2017: 1. Herren-Bundesliga - Runde 6 (Durchgang 2): SG Stockerau 1 - HiWay Grill Kapfenberg 1</div>
+    <div id="spielbericht">
+      <table width="100%">
+        <colgroup>
+          <col width="20%">
+          <col width="20%">
+          <col width="20%">
+          <col width="20%">
+          <col width="20%">
+        </colgroup>
+				<tr class="spb-header">
+          <td>
+						<div class="textZentriert">
+							<img src="http://xttv.oettv.info/pic/oettv_logo.jpg" alt="" />
+						</div>
+					</td>
+					<td>
+						<div class="heimMannschaft">
+							Heim-Mannschaft:<br />
+							A1-A3 (senkrecht &dArr;)
+            </div>
+					</td>
+					<td>
+						<div class="heimMannschaft">
+              SG Stockerau 1<br />
+              (SGSTO1)<br />
+            </div>
+					</td>
+					<td style="border-right-style:none;">
+						<div class="textZentriert">Ergebnis (Heim:Gast):</div>
+					</td>
+					<td style="border-left-style:none;">
+						<div id="mannschaftsErgebnis">4:2</div>
+					</td>
+				</tr>
+				<tr class="spb-header">
+					<td>
+            Runde: 6 (Durchgang 2)<br />
+						Datum: 20.03.2017 18:00<br /><br />
+            Schiedsrichter: Rusbeh Kawian, Thomas Gamsj&auml;ger
+          </td>
+					<td>
+						<div class="gastMannschaft">
+              Gast-Mannschaft:<br />
+							B1-B3 (waagrecht &rArr;)
+            </div>
+					</td>
+					<td>
+						<div class="gastMannschaft">
+              HiWay Grill Kapfenberg 1<br />
+              (KAPF1)<br />
+            </div>
+					</td>
+					<td style="border-right-style:none;">
+						<div class="textZentriert">Sieger:</div>
+          </td>
+					<td style="border-left-style:none;">
+						<div id="siegerHeim">
+              SG Stockerau 1<br />
+              (SGSTO1)
+            </div>
+          </td>
+				</tr>
+			</table>
+      <table width="100%">
+        <colgroup>
+          <col width="16%">
+          <col width="16%">
+          <col width="16%">
+          <col width="16%">
+          <col width="16%">
+          <col width="16%">
+        </colgroup>
+        <tr class="spb-spiele">
+          <td>1. Herren-Bundesliga 2016/2017</td>
+          <td>
+            <div class="gastSpieler">
+              B1:  30697<br />
+              Vorcnik David
+            </div>
+          </td>
+          <td>
+            <div class="gastSpieler">
+              B2:  50074<br />
+              Gerassimenko Kirill
+            </div>
+          </td>
+          <td>
+            <div class="gastSpieler">
+              B3:  5736<br />
+              Simoner Christoph
+            </div>
+          </td>
+          <td>
+            <div class="gastSpieler">BR:</div>
+          </td>
+          <td>
+            <div class="gastSpieler">
+              Doppel:<br />
+              30697 / 5736<br />
+              Vorcnik David <br />
+              Simoner Christoph <br />
+            </div>
+          </td>
+        </tr>
+        <tr class="spb-spiele">
+          <td>
+            <div class="heimSpieler">
+              A1:  5106<br />
+              Chen Weixing
+            </div>
+          </td>
+          <td>
+            <div class="spielNummer">(1)</div>
+            <div class="spielErgebnis">3:0 (3,7,11)</div>
+            <div class="spielSiegerHeim">SGSTO1</div>
+          </td>
+          <td>
+            <div class="spielNummer">(5)</div>
+            <div class="spielErgebnis">3:0 (6,5,9)</div>
+            <div class="spielSiegerHeim">SGSTO1</div>
+          </td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer"> &nbsp;</td>
+          <td class="leer">&nbsp;</td>
+        </tr>
+        <tr class="spb-spiele">
+          <td>
+            <div class="heimSpieler">
+              A2:  6441<br />
+              Jakab Janos
+            </div>
+          </td>
+          <td>
+            <div class="spielNummer">(6)</div>
+            <div class="spielErgebnis">3:1 (-9,5,8,4)</div>
+            <div class="spielSiegerHeim">SGSTO1</div>
+          </td>
+          <td>
+            <div class="spielNummer">(2)</div>
+            <div class="spielErgebnis">3:0 (11,10,8)</div>
+            <div class="spielSiegerHeim">SGSTO1</div>
+          </td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+        </tr>
+        <tr class="spb-spiele">
+          <td>
+            <div class="heimSpieler">
+              A3:  30757<br />
+              Serdaroglu David
+            </div>
+          </td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+          <td>
+            <div class="spielNummer">(3)</div>
+            <div class="spielErgebnis">0:3 (-0,-0,-0)</div>
+            <div class="spielSiegerGast">KAPF1</div>
+          </td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+        </tr>
+        <tr class="spb-spiele">
+          <td>
+            <div class="heimSpieler">AR:</div>
+          </td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+        </tr>
+        <tr class="spb-spiele">
+          <td>
+            <div class="heimSpieler">Doppel:<br /><br />
+              w.o.<br />
+              w.o.<br />
+            </div>
+          </td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+          <td class="leer">&nbsp;</td>
+          <td>
+            <div class="spielNummer">(4)</div>
+            <div class="spielErgebnis">0:3 (-0,-0,-0)</div>
+            <div class="spielSiegerGast">KAPF1</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="logdaten">Erstmalig erstellt am 20.03.2017 23:19. Einzelergebnis letztmals ge&auml;ndert am 20.03.2017 23:20. Letzte &Auml;nderung von SGSTO am 20.03.2017 23:19.</div>
+    <div id="siteInfo">
+      XTTV Ergebnisdienst (Version 8.0 - 12.12.2016, <a href="http://xttv.oettv.info/ed/changelog.txt" target="_blank">changelog</a>)	<span class="noPrint">| Open Source unter <a href="http://www.gnu.de/documents/gpl-3.0.de.html" target="_blank">GPL</a> | <a href="http://xttv.oettv.info" target="_blank">XTTV</a> | <a href="mailto:muba@noettv.info">N&Ouml;TTV-Kontakt</a></span>
+    </div>
+  </body>
+</html>
