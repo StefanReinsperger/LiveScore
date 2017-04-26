@@ -1,0 +1,1236 @@
+body {
+	padding:0px;
+	margin:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+h1 {
+	font-size:2em;
+}
+
+h2 {
+	font-size:1.8em;
+}
+
+h3 {
+	font-size:1.6em;
+}
+
+option {
+	font-size:12px;
+}
+
+/* <table> */
+
+table {
+	border-color:gray;
+	border-collapse:collapse;
+	padding:3px;
+	margin:0px;
+}
+
+table.uebersicht {
+	width:100%;
+	padding:0px;
+}
+
+table.header {
+	width:100%;
+	border:none;
+	padding:0px;
+	margin:0px;
+}
+
+table.pdf {background-color:#D0D0D0}
+
+/* <tr> */
+tr {}
+tr.spb-header			{height:80px;}
+tr.spb-spiele			{height:60px;}
+tr.even {border-style:none;}
+tr.odd {background-color:#D0D0D0;border-style:none;}
+tr.subheader {vertical-align:middle; background-color:#D0D0D0}
+
+/* <th> */
+th {
+	border-style:solid;
+	border-width:thin;
+	border-collapse:collapse;
+	font-weight:bold;
+	padding:3px;
+	margin:0px;
+}
+th.kein-rechter-Rand		{border-right-style:none; text-align:right; padding-right:0;}
+th.kein-linker-Rand		{border-left-style:none; text-align:left; padding-left:0;}
+
+/* <td> */
+td  {
+	border-style:solid;
+	border-width:thin;
+	border-collapse:collapse;
+	padding:3px;
+	margin:0px;
+}
+td.oben 					{vertical-align:top;}
+td.oben-zentriert		{vertical-align:top; text-align:center;}
+td.rechts-nopadding-rechts	{text-align:right; border-right-style:none; border-left-style:none; padding-right:0px; padding-left:10px;}
+td.links-nopadding-links		{text-align:left; border-right-style:none; border-left-style:none; padding-right:10px; padding-left:0px;}
+td.zentriert-nopadding	{text-align:center; border-right-style:none; border-left-style:none; padding-right:0px; padding-left:0px;}
+td.rechts-nopadding		{text-align:right; border-right-style:none; border-left-style:none; padding-right:0px; padding-left:0px;}
+td.kein-oberer-Rand		{border-top-style:none;}
+td.kein-unterer-Rand		{border-bottom-style:none;}
+td.kein-Rand				{border-style:none;}
+td.leer					{background-color:#E0E0E0;} /* Spielbericht Kreuzfelder */
+td.spb-ergebnis			{text-align:center; font-weight:bold;}
+td.rundennummern			{border-style:none; padding-bottom:0px; padding-top:0px; padding-left:0px; padding-right:5px; margin:0px; border-spacing:0px; }
+td.doppelRangliste		{border-left-style:none; border-right-style:none; text-align:center; padding:5px; vertical-align:top;}
+td.oben-kein-Rand		{vertical-align:top; border-style:none;}
+td.zentriertNopKeinRand	{text-align:center; border-style:none; padding-right:0px; padding-left:0px;}
+td.rechtsNopRKeinRand	{text-align:right; border-style:none; padding-right:0px; padding-left:10px;}
+td.linksNopLKeinRand		{text-align:left; border-style:none; padding-right:10px; padding-left:0px;}
+td.rechtsNopKeinRand		{text-align:right; border-style:none; padding-right:0px; padding-left:0px;}
+/* <td> und <th> */
+.uebersicht-nob-left	{border-style:none; padding-bottom:0px; padding-top:0px; text-align:left;}
+.uebersicht-nob-right	{border-style:none; padding-bottom:0px; padding-top:0px; text-align:right;}
+.rechts					{text-align:right; border-right-style:none; border-left-style:none; padding-right:10px; padding-left:10px;}
+.links					{text-align:left; border-right-style:none; border-left-style:none; padding-right:10px; padding-left:10px;}
+.zentriert				{text-align:center; border-right-style:none; border-left-style:none; padding-right:10px; padding-left:10px;}
+.rechtsKeinRand			{text-align:right; border-style:none; padding-right:10px; padding-left:10px;}
+.linksKeinRand			{text-align:left; border-style:none; padding-right:10px; padding-left:10px;}
+.zentriertKeinRand		{text-align:center; border-style:none; padding-right:10px; padding-left:10px;}
+
+.rand					{border-style:solid; border-width:thin;}
+/* <a> */
+
+
+a.login:link, a.login:visited {
+	color:yellow;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+a.login:focus, a.login:hover {
+	text-decoration:none;
+	background-color:#008000;
+}
+
+
+a:link, a:visited {
+	color:blue;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+a:focus, a:hover {
+	text-decoration:none;
+	background-color:#FFFF33;
+}
+
+a:active {
+	color:red;
+}
+
+/* aktuell gewählter link in Übersichten */
+a.selected {
+	font-weight:bold;
+	text-decoration:none;
+	border-bottom:none;
+}
+
+a.blacklink, a.blacklink:link, a.blacklink:visited, a.blacklink:focus, a.blacklink:hover {
+	color:black;
+	border-bottom:none;
+}
+
+/* link unter Bildern */
+a.img, a.img:link, a.img:visited, a.img:focus, a.img:hover,
+a.more, a.more:link, a.more:visited, a.more:focus, a.more:hover,
+a.allmore, a.allmore:link, a.allmore:visited, a.allmore:focus, a.allmore:hover {
+	text-decoration:none;
+	border:none;
+}
+
+img.noprint {
+}
+
+/* Nicht blauer curser mit Möglichkeit für sonstige Informationen bei mouse over (z.B. Spielerliste)*/
+a.info, a.info:link, a.info:visited  {
+	color:#000000;
+	position:relative;
+	text-decoration:none;
+}
+
+a.info:hover{
+	color:blue;
+}
+
+a.info:active {
+	color:red;
+}
+
+a.info span {
+	display:none;
+	text-decoration:none;
+}
+
+a.info:hover span {
+	display:block;
+	position:absolute;
+	top:-25px;
+	left:0px;
+	width:200px;
+	z-index:100;
+	color:#000000;
+	background:#FFFFCC;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left;
+	margin:0px;
+	padding:2px;
+	border:1px solid #000000;
+}
+
+/* Hilfe für Eingabe am Spielbericht */
+a.tooltip, a.tooltip:link, a.tooltip:visited, a.tooltip:active  {
+	cursor:help;
+	text-align:right;
+	width:350px;
+	height:20px;
+	position:relative;
+	display:block;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	padding:3px 10px;
+	margin:0 0 1px;
+	text-decoration:none;
+	color:black;
+	background:#99FF99;
+	border:1px solid black;
+}
+
+a.tooltip:hover {
+ }
+
+a.tooltip span {
+	display:none;
+	text-decoration:none;
+}
+
+a.tooltip:hover span {
+	display:block;
+	position:absolute;
+	top:0px;
+	left:200px;
+	width:400px;
+	z-index:100;
+	color:#000000;
+	background:#FFFFCC;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left;
+	margin:0px;
+	padding:5px;
+	border:1px solid #000000;
+ }
+
+a.tooltip span h1 {
+	font-size:16px;
+	font-weight:bold;
+	color:yellow;
+	background-color:gray;
+	margin:0px;
+	margin-bottom:3px;
+	padding:3px;
+	border:0px;
+	border-bottom:1px solid black;
+ }
+
+/* Hilfetexte bei Tabellen und Ranglisten */
+a.tabhelp, a.tabhelp:link, a.tabhelp:visited, a.tabhelp:active  {
+	cursor:help;
+	color:#000000;
+	position:relative;
+	text-decoration:none;
+	border-bottom:1px dotted #000;
+}
+
+a.tabhelp:hover {
+}
+
+a.tabhelp span {
+	display:none;
+	text-decoration:none;
+}
+
+a.tabhelp:hover span {
+	display:block;
+	position:absolute;
+	top:20px;
+	left:30px;
+	width:400px;
+	z-index:100;
+	color:#000000;
+	background:#FFFFCC;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left;
+	margin:0px;
+	padding:5px;
+	border:1px solid #000000;
+}
+
+a.tabhelp span h1 {
+	font-size:16px;
+	font-weight:bold;
+	color:yellow;
+	background-color:gray;
+	margin:0px;
+	margin-bottom:3px;
+	padding:3px;
+	border:0px;
+	border-bottom:1px solid black;
+}
+
+a.tabhelpLeft, a.tabhelpLeft:link, a.tabhelpLeft:visited, a.tabhelpLeft:active  {
+	cursor:help;
+	color:#000000;
+	position:relative;
+	text-decoration:none;
+	border-bottom:1px dotted #000;
+}
+
+a.tabhelpLeft:hover {
+}
+
+a.tabhelpLeft span {
+	display:none;
+	text-decoration:none;
+}
+
+a.tabhelpLeft:hover span {
+	display:block;
+	position:absolute;
+	top:20px;
+	left:-250px;
+	width:250px;
+	z-index:100;
+	color:#000000;
+	background:#FFFFCC;
+	font-size:12px;
+	font-weight:normal;
+	text-align:left;
+	margin:0px;
+	padding:5px;
+	border:1px solid #000000;
+}
+
+a.tabhelpLeft span h1 {
+	font-size:16px;
+	font-weight:bold;
+	color:yellow;
+	background-color:gray;
+	margin:0px;
+	margin-bottom:3px;
+	padding:3px;
+	border:0px;
+	border-bottom:1px solid black;
+}
+
+/* <span> */
+span {}
+
+span.bestaetigt {
+	color:green;
+}
+
+span.nichtbestaetigt {
+	color:red;
+}
+
+span.table-left {
+	float:left;
+	position:relative;
+	border-style:none;
+	padding-top:0px;
+	padding-right:5px;
+	padding-bottom:0px;
+	padding-left:0px;
+	margin:0px;
+}
+
+span.table-right {
+	float:right;
+	position:relative;
+	border-style:none;
+	padding-top:0px;
+	padding-right:5px;
+	padding-bottom:0px;
+	padding-left:0px;
+	margin:0px;
+}
+
+span.noPrint {
+}
+
+span.highlight {
+	color:red;
+}
+
+span.rot {
+	color:red;
+}
+
+span.headerTitle {
+	font-size:25px;
+	font-weight:bold;
+	margin:0;
+	padding:5px
+}
+
+span.headerSubTitle {
+	font-size:12px;
+	color:#FF0000;
+	margin:0;
+	padding:5px;
+}
+
+span.neu {
+	color:red;
+}
+
+/* <input> */
+input.roterbutton {
+	background-color:#FF0000;
+	color:white;
+}
+
+/* <div class="..."> */
+
+div.subheader-left {
+	float:left;
+	position:relative;
+	padding:5px;
+	border-style:none;
+}
+
+div.subheader-right {
+	float:right;
+	position:relative;
+	padding:5px;
+	border-style:none;
+}
+
+div.title-noPrint {
+	margin-top:1em;
+	font-weight:bold;
+}
+
+div.muba-nachricht {
+	text-align:center;
+	color:red;
+}
+
+div.ansichtMenuTitel {
+	margin-top:2em;
+	font-weight:bold;
+}
+
+div.ansichtMenu {
+	margin-top:0.5em;
+	font-weight:bold;
+}
+
+div.ansichtTitel {
+	margin-top:2em;
+	font-weight:bold;
+}
+
+div.ansichtTabelle{
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+div.hinweis {
+	margin:1em;
+	font-size:16px;
+	color:green;
+	font-weight:bold;
+}
+
+div.warnung {
+	margin:1em;
+	font-size:16px;
+	color:orange;
+	font-weight:bold;
+}
+
+div.eingabe-fehler {
+	margin:1em;
+	color:#ff0000;
+	font-size:16px;
+	font-weight:bold;
+}
+
+div.system-fehler {
+	margin:1em;
+	color:#ff0000;
+	font-size:20px;
+	font-weight:bold;
+}
+
+div.hilfebutton {
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+div.nochNichtVorhanden {
+	margin-top:1em;
+	font-weight:bold;
+}
+
+div.textZentriert {
+	text-align:center;
+}
+
+div.spielNummer {
+	margin:1px;
+	padding:0px;
+	border:0px;
+	font-weight:normal;
+	text-align:right;
+}
+
+div.spielErgebnis {
+	margin:1px;
+	padding:0px;
+	border:0px;
+	font-weight:bold;
+	text-align:center;
+}
+
+div.spielErgebnisHeim {
+	margin:1px;
+	padding:0px;
+	border:0px;
+	font-weight:bold;
+	text-align:center;
+	color:green;
+}
+
+div.spielErgebnisGast {
+	margin:1px;
+	padding:0px;
+	border:0px;
+	font-weight:bold;
+	text-align:center;
+	color:red;
+}
+
+div.spielSiegerHeim {
+	margin:1px;
+	padding:0px;
+	border:0px;
+	font-weight:normal;
+	text-align:right;
+	color:green;
+}
+
+div.spielSiegerGast {
+	margin:1px;
+	padding:0px;
+	border:0px;
+	vertical-align:bottom;
+	font-weight:normal;
+	text-align:right;
+	color:red;
+}
+
+div.heimSpieler {
+	color:green;
+}
+
+div.gastSpieler {
+	color:red;
+}
+
+div.heimMannschaft {
+	color:green;
+}
+
+div.gastMannschaft {
+	color:red;
+}
+
+/* <div id="..."> */
+
+#loginFenster {
+	padding:5px;
+	background:#008000;
+	color:#fff;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:5;
+	width:100%;
+	height:50;
+	text-align:center;
+}
+
+#loginFensterNoscript {
+	float:right;
+	position:absolute;
+	padding:5px;
+	background:#008000;
+	color:#fff;
+	left:-185px;
+	top:-15px;
+	z-index:10;
+}
+
+#control-header {
+	margin:1em;
+	color:#ff0000;
+	font-size:20px;
+	font-weight:bold;
+}
+
+#header {
+	margin-top:0.5em;
+	margin-bottom:0em;
+}
+
+#subheader {
+	margin:0em;
+}
+
+#offene_verlegungsantraege {
+	background-color:#2ECCFA;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	padding:10px
+}
+
+#unbestaetigt {
+	background-color:orange;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	padding:10px
+}
+
+#offen {
+	background-color:yellowgreen;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	padding:10px
+}
+
+#uebersicht {
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+#runden { /* Rundenübersicht */
+	margin-top:1em;
+	margin-bottom:0.5em;
+}
+
+#spb-titel {
+	margin-top:1em;
+	margin-bottom:0.5em;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#spielbericht {
+	margin-top:0em;
+	margin-bottom:0.5em;
+	font-size:1.2em;
+}
+
+#mannschaftsErgebnis {
+	margin:1px;
+	padding:0px;
+	border:0px;
+	vertical-align:top;
+	font-weight:bold;
+	text-align:center;
+}
+
+#siegerHeim {
+	text-align:center;
+	font-weight:bold;
+	color:green;
+}
+
+#siegerGast {
+	text-align:center;
+	font-weight:bold;
+	color:red;
+}
+
+#unentschieden {
+	text-align:center;
+	font-weight:bold;
+}
+
+#siteInfo {
+	clear:both;
+	border-top:1px solid #cccccc;
+	padding:10px 10px 10px 10px;
+	margin-top:10px;
+	text-align:center;
+}
+
+#siteInfo img{padding:4px 4px 4px 0px;vertical-align:middle;}
+
+/* Rasteranzeige Styles aus SPORT */
+
+table.raster {
+	border:0;
+	padding:0px;
+	margin:0px;
+}
+td.raster  {
+	/* font-size:small; */
+	border:0;
+}
+.right {
+	padding-top:0.5pt;
+	padding-right:3pt;
+	padding-bottom:0.5pt;
+	padding-left:3pt;
+	border:0;
+	border-right:1pt solid windowtext;}
+.bottom  {
+	padding-top:0.5pt;
+	padding-right:3pt;
+	padding-bottom:0.5pt;
+	padding-left:3pt;
+	border:0;
+	border-bottom:1pt solid windowtext;}
+.left  {
+	padding-top:0.5pt;
+	padding-right:3pt;
+	padding-bottom:0.5pt;
+	padding-left:3pt;
+	border:0;
+	border-left:1pt solid windowtext;
+}
+.rightbottom  {
+	padding-top:0.5pt;
+	padding-right:3pt;
+	padding-bottom:0.5pt;
+	padding-left:3pt;
+	border:0;
+	border-right:1pt
+	solid windowtext;
+	border-bottom:1pt solid windowtext;
+}
+.rightleft  {
+	padding-top:0.5pt;
+	padding-right:3pt;
+	padding-bottom:0.5pt;
+	padding-left:3pt;
+	border:0;
+	border-right:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+}
+.bottomleft {
+	padding-top:0.5pt;
+	padding-right:3pt;
+	padding-bottom:0.5pt;
+	padding-left:3pt;
+	border:0;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+}
+.rightbottomleft {
+	padding-top:0.5pt;
+	padding-right:3pt;
+	padding-bottom:0.5pt;
+	padding-left:3pt;
+	border:0;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.result_upper {
+	padding-top:0.5pt;
+	padding-right:3pt;
+	padding-bottom:0.5pt;
+	padding-left:3pt;
+	border:0;
+	border-right:1pt solid windowtext;
+	text-align: center;}
+.result_lower {
+	padding-top:0.5pt;
+	padding-right:3pt;
+	padding-bottom:1pt;
+	padding-left:3pt;
+	border:0;
+	text-align: center;}
+
+/* Formate für Spielanzeige */
+
+div.ansichtSpieleTitel{
+	margin-top:1em;
+	margin-bottom:0em;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.liga {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	width:220px;
+	vertical-align:middle;
+}
+.durchgang {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	text-align:center;
+	width:20px;
+	vertical-align:middle;
+}
+.runde {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	text-align:center;
+	width:20px;
+	vertical-align:middle;
+}
+.spieldatum_wt {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	text-align:right;
+	width:30px;
+	vertical-align:middle;
+}
+.spieldatum_datum {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	width:125px;
+	vertical-align:middle;
+}
+.spielmannschaften {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+/*	text-transform:uppercase; */
+	width:110px;
+	vertical-align:middle;
+}
+.spielmannschaften_kurz {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	width:300px;
+	vertical-align:middle;
+}
+.spielmannschaften_lang {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	width:450px;
+	vertical-align:middle;
+}
+.ergebnis {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	text-align:center;
+	width:40px;
+	vertical-align:middle;
+}
+.spielort {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	width:250px;
+	vertical-align:middle;
+}
+.hinweise {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	width:80px;
+}
+.morelink {
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	width:30px;
+	text-align:center;
+}
+.geaendertDatum{
+	padding-left: 2px;
+	padding-right: 2px;
+	display:inline-block;
+	font-style:normal;
+	width:115px;
+	text-align:center;
+}
+
+tr.resultDetailLine {
+	border-top: 1px solid rgba(0, 0, 0, 0.05)
+}
+
+td.player {
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left: 0px;
+	padding-right: 2px;
+	border-style:none;
+	width:165px;
+}
+
+td.result {
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-style:none;
+	text-align:center;
+	width:40px;
+}
+
+td.points {
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left: 0px;
+	padding-right: 2px;
+	border-style:none;
+	text-align:left;
+	width:100px;
+}
+
+td.detailSpalte{
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left: 10px;
+	padding-right: 0px;
+	border-style:none;
+	width:480px;
+	vertical-align:top;
+}
+
+td.statusSpalte{
+	padding-top:5px;
+	padding-bottom:3px;
+	padding-left: 15px;
+	padding-right: 2px;
+	border-style:none;
+	vertical-align:top;
+}
+
+img.hinweisIcon {
+	 vertical-align: middle;
+}
+
+ul.listSpiele {
+  list-style:none;
+  padding:0em;
+}
+
+li.gameSummary {
+	padding-top:4px;
+	padding-bottom:4px;
+	white-space:nowrap;
+}
+.liOdd {
+	background-color: #ccc;
+}
+
+/* Ende Formate für Spielanzeige */
+
+/* Beginn Mannschaftsvorstellung von Mathias */
+
+#vorstellung {
+	padding:10px;
+	width:770px;
+	margin:10px;
+}
+
+div.vorstellung a {
+	color:black;
+}
+
+div.vorstellung a:hover {
+	color:blue;
+}
+
+.heading {
+	font-size:2.3em;
+	font-weight:bolder;
+	line-height:90px;
+	padding:0;
+	margin:0;
+	vertical-align:middle;
+}
+
+.teamname {
+	float:left;
+}
+
+.vereinslogo {
+	float:right;
+}
+
+.vereinslogo img.logo{
+	height:90px;
+}
+
+.datenallgemein, .spielerkader, .trainer, .zugaengeabgaenge, .staerkenschwaechen, .siegertippabsteigertipp, .saisonzielvergangeneplatzierungen, .statistiken {
+	clear:both;
+	padding:5px 0 5px 0;
+}
+
+.vereinsdatenlinks, .spiellokal {
+	float:left;
+	width:50%;
+	clear:both;
+}
+
+.mannschaftsfuehrer, .ersatzlokal {
+	float:left;
+	width:50%;
+}
+
+.mannschaftsfoto {
+	float:left;
+	margin:25px 20px 0 0;
+	vertical-align:middle;
+}
+
+.mannschaftsfoto img {
+	width:448px;
+}
+
+.vereinsdaten {
+	float:right;
+}
+
+.vereinsdatenlinks {
+	float:left;
+}
+
+.vereinsdaten div, .vereinsdatenlinks div {
+	padding:3px 0 0 0;
+}
+
+.kaderspieler {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.kaderspieler div.spieler {
+	float: left;
+	margin: 5px 15px 30px 0px;
+	min-width: 180px;
+}
+
+.kaderspieler div.spieler  img{
+	height:143px;
+}
+
+.zusatzkaderspieler {
+	clear:both;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.zusatzkaderspieler div.spieler {
+	float: left;
+	margin: 5px 15px 30px 0px;
+	min-width: 180px;
+}
+
+.zugaenge, .abgaenge, .staerken, .schwaechen, .siegertipp, .absteigertipp, .saisonziel, .vergangeneplatzierungen {
+	float:left;
+	width:50%;
+}
+
+.zugaenge ol, .abgaenge ol {
+	padding:0px;
+	margin:10px 0 0 0;
+	list-style-position:outside;
+}
+
+.zugaenge ol li, .abgaenge ol li {
+	padding:0px;
+	margin:0;
+	list-style-position:outside;
+	float:left;
+	list-style-type:none;
+	white-space:nowrap;
+	width:100%;
+}
+
+.staerken ul, .schwaechen ul, .siegertipp ul, .absteigertipp ul, .saisonziel ul, .vergangeneplatzierungen ul {
+	padding:0px;
+	margin:10px 0 0 0;
+	list-style-position:outside;
+}
+
+.staerken ul li, .schwaechen ul li, .siegertipp ul li, .absteigertipp ul li, .saisonziel ul li, .vergangeneplatzierungen ul li {
+	padding:0px;
+	margin:0 0 0 20px;
+	list-style-position:outside;
+	float:left;
+	list-style-image:url(../pic/rechts.gif);
+	white-space:nowrap;
+	width:100%;
+}
+
+.zugaenge span.Name, .abgaenge span.Name {
+	display:inline-block;
+	width:44%;
+}
+
+.zugaenge span.Nation, .abgaenge span.Nation {
+	display:inline-block;
+	width:12%;
+}
+
+.nobr{
+	white-space:nowrap;
+}
+
+.smallheading {
+	font-weight:bold;
+	text-decoration:underline;
+	padding:12px 0 0 0 !important;
+}
+
+.smallerheading {
+	text-decoration:underline;
+}
+
+.statistikendetail ul {
+	padding:0px;
+	margin:10px 0 10px 0;
+	list-style-position:outside;
+}
+
+.tabellenstatistiken ul li, .durchschnittsstatistiken ul li, .heimstatistiken ul li, .gaststatistiken ul li, .serienstatistiken ul li {
+	padding:0px;
+	margin:0 0 0 20px;
+	list-style-position:outside;
+	float:left;
+	list-style-image:url(../pic/rechts.gif);
+	white-space:nowrap;
+	width:100%;
+}
+
+.tabellenstatistiken, .heimstatistiken {
+	clear:both;
+	float:left;
+	width:50%;
+}
+
+.durchschnittsstatistiken, .gaststatistiken {
+	float:left;
+	width:50%;
+}
+
+.serienstatistiken, .maxspielstatistiken {
+	float:left;
+	clear:both;
+}
+
+.maxspielstatistiken ul li {
+	display:inline;
+	float:left;
+	padding:0 20px 0 0;
+	margin:0;
+	list-style-position:outside;
+	list-style-type:none;
+	list-style-image:none;
+	white-space:nowrap;
+}
+
+.maxspielstatistiken ul li ul {
+	padding:0px;
+	margin:0 0 10px 0;
+	list-style-position:outside;
+}
+
+.maxspielstatistiken ul li ul li {
+	display:block;
+	list-style-type:none;
+	list-style-image:url(../pic/rechts.gif);
+	list-style-position:outside;
+	float:none;
+	white-space:nowrap;
+	padding:0;
+	margin:0;
+}
+
+/* Ende Mannschaftsvorstellung von Mathias */
+
+/* tablesorter */
+/*
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+*/
+table.tablesorter thead tr .header {
+	# background-image: url(../pic/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+	# background-image: url(../pic/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	# background-image: url(../pic/desc.gif);
+}
+/*
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+*/
+table.tablesorter tbody tr.odd td {
+	background-color: #D0D0D0;
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+	background-color: #8dbdd8;
+}
